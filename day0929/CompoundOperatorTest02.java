@@ -1,0 +1,17 @@
+//CompoundOperatorTest 코딩반복문사용해보기
+
+class CompoundOperatorTest02 
+{
+	public static void main(String[] args) 
+	{
+		int i = 1;
+		int sum = 0;
+
+		for( i=1 ; i <= 3 ; i++ /*같은말 i=i+1*/){
+			sum += i;
+		}
+
+		System.out.println("i:" + i); //i++하고 나왔기 때문에 앞코딩과 다르게 4가나옴
+		System.out.println("sum:" + sum);
+	}
+}

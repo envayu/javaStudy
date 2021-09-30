@@ -1,0 +1,42 @@
+class CharAndStringTest 
+{
+	public static void main(String[] args) 
+	{
+		//자바에서는 단일문자의 처리와 문자열의 처리가 다름
+		//하나의 문자를 표혀하기 위해서는 작은따옴표로 묶어야하고
+		//문자열을 처리하기 위해서는 큰따옴표로 묶어야 함
+		//만약 하나의 문자이지만 큰따옴표로 묶었다면, char에 저장x
+		//String으로 저장해야함
+
+		char firstName;
+		firstName = '김' ;
+		System.out.println(firstName);
+
+		String name;
+		name = "김가나";
+		System.out.println(name);
+
+		//char lastName;
+		//lastName = "나"; -> 큰따옴표 쓰고싶으면 String lastName; 으로하면 가넝
+		char lastName;
+		lastName = '나';
+		System.out.println(lastName);
+/* #오류
+C:\javaStudy\day0928>javac CharAndStringTest.java
+CharAndStringTest.java:20: error: incompatible types: String cannot be converted to char
+                lastName = "나";
+                           ^
+1 error
+
+*/
+
+
+		String data;
+		data = "hello"; //마지막 글자를 출력하고싶어여 charAt사용,, 위치를 줘야함 0부터 시작
+		char last = data.charAt(4); //캐릭터 이름 = 스트링선언.기능(인덱스)
+		System.out.println("맨마지막에 있는 문자는 " +last+"입니다.");
+
+
+
+	}
+}

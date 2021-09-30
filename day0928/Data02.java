@@ -1,0 +1,14 @@
+//사용자한테 문자열을 입력받아 맨 첫번째 문자를 출력해 봅니다.
+//선생님거랑 비교해보기 제목은 FirstChar~
+
+class Data02 
+{
+	public static void main(String[] args) 
+	{
+		String data;
+		data = "Coffee"; 
+		char first = data.charAt(0); 
+		System.out.println("첫번째 문자는 " +first+"입니다.");
+
+	}
+}

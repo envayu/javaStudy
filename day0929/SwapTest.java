@@ -1,0 +1,27 @@
+class SwapTest 
+{
+	public static void main(String[] args) 
+	{
+		String cup1 = "커피";
+		String cup2 = "녹치";
+
+		System.out.println("컵1:" + cup1);
+		System.out.println("컵2:" + cup2);
+		//현재 각각 컵1에는 커피와 컵2에는 녹차가 담겨져있다. 근데 나는
+		//컵2에 커피를 담고싶고 컵1에 녹차를 담고싶다!(맞바꾸고싶다!)
+		//그렇다면 빈컵을 하나더 생성한다! 변수를 하나 더 만든다!
+		//보통 temp라는 임시변수를 만든다
+		//커피를 템프로 옮기고, 녹차를 컵1로 옮기고 템프에있는 커피를 컵2로옮긴다
+
+		String temp;
+		temp = cup1;
+		cup1 = cup2;
+		cup2 = temp;
+
+		System.out.println("컵의 내용물을 바꾸었습니다");
+		System.out.println("컵1:"+ cup1);
+		System.out.println("컵2:"+ cup2);
+
+
+	}
+}

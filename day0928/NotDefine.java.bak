@@ -1,0 +1,9 @@
+class NotDefine
+{
+	public static void main(String[] args) 
+	{
+		//String name;
+		name = "가나다" ;
+		System.out.println("이름은" + name);
+	}
+}

@@ -1,0 +1,20 @@
+class SwapTestInt 
+{
+	public static void main(String[] args) 
+	{
+		int a = 3;
+		int b = 4;
+		System.out.println("a="+a);
+		System.out.println("b="+b);
+
+		int temp; //임시변수를 적절한 자료형에 변경해주어야함
+		temp = a;
+		a  = b;
+		b = temp;
+
+
+		System.out.println("a와 b의 값을 서로 바꾸었습니다");
+		System.out.println("a="+a);
+		System.out.println("b="+b);
+	}
+}
